@@ -1,6 +1,7 @@
 {
   "name": "cjmartino/twilio-laravel",
   "description": "A modern Twilio wrapper for Laravel 5.6+",
+  "type": "library",
   "keywords": ["laravel", "sms", "twilio", "Craig Martin", "cjmartino"],
   "license": "MIT",
   "authors": [
@@ -13,7 +14,9 @@
     "php": "^7.1",
     "illuminate/contracts": "5.6.*",
     "illuminate/support": "5.6.*",
-    "illuminate/view": "5.6.*"
+    "illuminate/view": "5.6.*",
+    "Illuminate/Foundation": "5.6.*",
+    "twilio/sdk":"5.0.*"
   },
   "require-dev": {
     "mockery/mockery": "^1.0",
