@@ -1,0 +1,47 @@
+{
+  "name": "cjmartino/twilio-laravel",
+  "description": "A modern Twilio wrapper for Laravel 5.6+",
+  "keywords": ["laravel", "sms", "twilio", "Craig Martin", "cjmartino"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Craig Martin",
+      "email": "cm@buildonauts.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "illuminate/contracts": "5.6.*",
+    "illuminate/support": "5.6.*",
+    "illuminate/view": "5.6.*"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^6.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "cjmartino\\twilio-laravel\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "cjmartino\\twilio-laravel\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "cjmartino\\twilio-laravel\\ServiceProvider"
+      ],
+      "aliases": {
+        "Debugbar": "cjmartino\\twilio-laravel\\Facade"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
